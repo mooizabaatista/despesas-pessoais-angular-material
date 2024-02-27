@@ -1,27 +1,42 @@
-# DespesasPessoaisAngularMaterial
+# Controle Financeiro
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.12.
+## Descrição
 
-## Development server
+Este é um projeto desenvolvido em Angular que requer a instalação de dependências e a inicialização de um servidor JSON.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Instalação
 
-## Code scaffolding
+1. Clone o repositório para o seu ambiente local
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2. Navegue até a pasta do projeto:
 
-## Build
+   ```bash
+   cd seu-projeto
+   ```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+3. Instale as dependências necessárias usando npm:
 
-## Running unit tests
+   ```bash
+   npm install
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Inicialização do Servidor JSON
 
-## Running end-to-end tests
+Após instalar as dependências, você precisará iniciar o servidor JSON. Siga os passos abaixo:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Certifique-se de estar na raiz do projeto.
+2. Execute o seguinte comando:
 
-## Further help
+   ```bash
+   npm run db-json
+   ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Este comando irá iniciar o servidor JSON na porta 3001, conforme configurado no arquivo `package.json`.
+
+## Inicialização do Servidor de Desenvolvimento
+
+Após iniciar o servidor JSON, você pode iniciar o servidor de desenvolvimento Angular. Execute o seguinte comando:
+
+```bash
+ng serve
+```

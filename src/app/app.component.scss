@@ -1,0 +1,62 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+mat-toolbar {
+  height: 100px;
+
+  .brand {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 25px;
+
+    span {
+      margin-left: 10px;
+    }
+  }
+}
+
+.example-sidenav {
+  min-height: 100px !important;
+  background-color: #f5425d;
+  max-height: 100px !important;
+  color: #fff;
+  width: 280px;
+  padding-top: 15px;
+  position: fixed;
+  text-align: center;
+
+  .valorSaldo {
+    font-size: 35px;
+    margin-top: 20px;
+  }
+}
+
+.rounded-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px !important;
+  height: 65px !important;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 75px;
+  background-color: #f5425d !important;
+
+  .icon-wrapper {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.main-body {
+  max-width: 1248px;
+  margin: 30px auto;
+}
+
+.search {
+  width: 100%;
+}

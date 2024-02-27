@@ -1,0 +1,44 @@
+<div mat-dialog-title>
+    <h1>Cadastro de Despesa</h1>
+</div>
+
+
+<form [formGroup]="formDesp" #formDir="ngForm" (ngSubmit)="SubmitForm()">
+    <div mat-dialog-content class="content">
+        <div class="row">
+            <!-- LOCAL -->
+            <mat-form-field appearance="outline">
+                <mat-label>Local</mat-label>
+                <input matInput formControlName="local">
+            </mat-form-field>
+            <!-- DATA -->
+            <mat-form-field class=" example-full-width" appearance="outline">
+                <mat-label>Data</mat-label>
+                <input matInput [matDatepicker]="picker" formControlName="data">
+                <mat-hint>DD/MM/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picker">
+                    <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+                </mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <!-- LOCAL -->
+            <mat-form-field appearance="outline">
+                <mat-label>Tipo Pagamento</mat-label>
+                <input matInput formControlName="tipoPagamento">
+            </mat-form-field>
+            <!-- VALOR -->
+            <mat-form-field appearance="outline">
+                <mat-label>Valor</mat-label>
+                <input matInput formControlName="valor">
+            </mat-form-field>
+        </div>
+    </div>
+    <div mat-dialog-actions>
+        <div class="buttons-action">
+            <button type="submit" mat-raised-button color="primary">Salvar</button>
+            <button type="button" mat-raised-button color="warn" [mat-dialog-close]="true">Cancelar</button>
+        </div>
+    </div>
+</form>
